@@ -18,7 +18,7 @@ app.use(logger("dev"));
 // set up requests body for Json
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+const PORT = process.env.PORT || 3000
 // Handlebars
 app.engine(
   "handlebars",
@@ -38,6 +38,6 @@ mongoose.connect(MONGODB_URI);
 
 
 // Listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
-});
+app.listen(PORT, () => {
+  console.log(`Server running on PORT:${PORT}`)
+})
