@@ -1,9 +1,8 @@
 
 var axios = require("axios");
 var cheerio = require("cheerio");
-var mongoose = require("mongoose");
 var db = require("../models");
-mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
+
 module.exports = function (app) {
 
     app.get("/", function (req, res) {
