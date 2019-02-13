@@ -1,0 +1,12 @@
+<div class="container">
+
+
+  {{#each data}}
+  <div class="row">
+    <p id={{this.id}}><a href={{this.link}}>{{this.title}}</a></p>
+    <button class="test" data-id={{this.id}}>update</button>
+  </div>
+  {{/each}}
+
+</div>
+<script src="/js/app.js"></script>

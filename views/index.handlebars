@@ -1,0 +1,15 @@
+
+<div class="container">
+
+
+  {{#each story}}
+  <div class="panel panel-default">
+    
+    <p class="headlines" id={{this.id}}><a href={{this.link}}>{{this.title}}</a></p>
+    <button class="save btn btn-default" data-id={{this.id}}>save</button>
+   
+  </div>
+  {{/each}}
+
+</div>
+<script src="/js/app.js"></script>
