@@ -31,7 +31,7 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose.connect(MONGODB_URI);
 
