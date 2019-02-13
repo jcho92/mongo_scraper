@@ -1,6 +1,6 @@
 
 
-$(document).on("click", ".test", function () {
+$(document).on("click", ".save", function () {
 
     var id = $(this).data("id")
     var text = $("#" + id).text()
