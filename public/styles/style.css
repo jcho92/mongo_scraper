@@ -81,3 +81,12 @@ h1 {
   padding: 30px;
 }
 
+#closemodal{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  background: white;
+  padding: 60px;
+}
+
